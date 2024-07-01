@@ -30,10 +30,20 @@
        
         .profile{
             display: flex;
-            grid-gap: 0px;
-            justify-content: space-evenly;
+            grid-gap: 20px;
+            justify-content: center;
             
         }
+        img{
+            border-radius: 50%; 
+            object-fit: cover;
+        
+        }
+
+       .name{
+        padding: 0px;
+        margin: 0px;
+       }
         
         h1 {
             color: #fff;
@@ -52,12 +62,20 @@
             padding: 10px;
             border-radius: 7px;
         }
-        
-        img{
-            border-radius: 50%; 
-            object-fit: cover;
+        a {
+            color: #2196F3;
+            text-decoration: none;
         }
+       
         
         @media screen and (max-width: 375px){
             .profile{display: block;}
+            li{font-size: 16px;}
+            .name p{
+                padding: 0px;
+                margin: 5px;
+            }
+            h1{
+                font-size: 18px;
+            }
         }
